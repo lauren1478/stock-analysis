@@ -40,8 +40,18 @@ After looking at the data itself, Steve can determine that overall 2017 had stro
 ![Alt text](https://github.com/lauren1478/stock-analysis/blob/main/StockResults_2018.png)
 
 
-Instead of giving each variable a different name, we give the array a name and then access the individual variables by their index.
+### Coding Results
+I believe that the difference that made the refactored code more efficient was the creation of the three new arrays below. The loop runs analysis on each of the arrays in relation to the ticker array through a variable we named the tickerIndex. It allows VBA to run through the data in a guided direction vs running through the data going off one variable.
 
-Summary: In a summary statement, address the following questions.
-What are the advantages or disadvantages of refactoring code?
-How do these pros and cons apply to refactoring the original VBA script?
+![Alt test](https://github.com/lauren1478/stock-analysis/blob/main/Three%20Arrays.png)
+
+vs.
+
+![alt text](https://github.com/lauren1478/stock-analysis/blob/main/No%20Specifc%20Arrays.png)
+
+## Summary
+### What are the advantages or disadvantages of refactoring code?
+Arguably the largest advantage of refactoring is it makes your code more efficient, clean, clear, and organized. A disadvantage is that if one makes a mistake while refactoring, it may break the code the altogher which defeats the purpose of refactoring.
+
+### How do these pros and cons apply to refactoring the original VBA script?
+Establishing the arrays helps VBA to organize its processing and its also clearer for me to read exactly what is going on. However in doing so, thats three more lines than in the original code which presents the opportunity for three more lines to mess up in if you end up trying something incorrectly.
